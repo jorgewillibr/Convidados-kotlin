@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_all">
+
+    <fragment
+        android:id="@+id/nav_all"
+        android:name="com.jorgewilli.comvidados.view.AllGuestsFragment"
+        android:label="@string/menu_all_guests"
+        tools:layout="@layout/fragment_all" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_presents"
+        android:name="com.jorgewilli.comvidados.view.PresentGuestsFragment"
+        android:label="@string/menu_presents"
+        tools:layout="@layout/fragment_present" />
+
+    <fragment
+        android:id="@+id/nav_absents"
+        android:name="com.jorgewilli.comvidados.view.AbsentGuestsFragment"
+        android:label="@string/menu_absents"
+        tools:layout="@layout/fragment_absent" />
+
+    <fragment
+        android:id="@+id/nav_posts"
+        android:name="com.jorgewilli.comvidados.view.PostFormFragment"
+        android:label="@string/menu_posts"
+        tools:layout="@layout/post_form_fragment" />
+</navigation>
